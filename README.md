@@ -1,10 +1,10 @@
-# Dr. Martin Zsarnoczky - Personal Academic Website
+# Martin Zsarnoczky Dr. - Personal Academic Website
 
 🌐 **Live Site:** [https://zsarnoczkymartin.github.io](https://zsarnoczkymartin.github.io)
 
 ## About
 
-This is the personal academic website of Dr. Martin Zsarnoczky, Professor at WSG University of Economy and quality of life researcher specializing in active ageing, gerontology, elderly well-being, early dementia and eHealth solutions.
+This is the personal academic website of Dr. Martin Zsarnoczky PhD., Professor at WSG University of Economy and quality of life researcher specializing in active ageing, gerontology, elderly well-being, early dementia and eHealth solutions.
 
 ## Research Areas
 
@@ -26,7 +26,7 @@ This is the personal academic website of Dr. Martin Zsarnoczky, Professor at WSG
 ## Academic Profiles
 
 - **ORCID:** [0000-0002-2905-2168](https://orcid.org/0000-0002-2905-2168)
-- **ResearchGate:** [Martin Zsarnóczky](https://www.researchgate.net/profile/Martin-Zsarnoczky)
+- **ResearchGate:** [Martin Zsarnoczky](https://www.researchgate.net/profile/Martin-Zsarnoczky)
 - **Google Scholar:** [Profile](https://scholar.google.hk/citations?user=Fz7uXkQAAAAJ&hl=en)
 
 ## Notable Recognition
@@ -49,7 +49,7 @@ This is the personal academic website of Dr. Martin Zsarnoczky, Professor at WSG
 
 For research collaboration, speaking engagements, or inquiries:
 - 📧 Email: martin@multiple-impact.nl
-- 🏛️ Institution: Multiple Impact, Utrecht
+- 🏛️ Institution: Multiple Impact bv, Utrecht
 
 ---
 
