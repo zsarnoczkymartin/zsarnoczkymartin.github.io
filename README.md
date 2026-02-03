@@ -53,4 +53,4 @@ For research collaboration, speaking engagements, or inquiries:
 
 ---
 
-© 2026 Martin Zsarnoczky Dr. All rights reserved.
+© 2025 Martin Zsarnoczky Dr. All rights reserved.
