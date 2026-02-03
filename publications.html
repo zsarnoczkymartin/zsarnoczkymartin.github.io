@@ -3,10 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Complete list of publications by Dr. Martin Zsarnóczky - research on quality of life, active ageing, gerontology, and senior tourism.">
-    <meta name="keywords" content="publications, research papers, quality of life, gerontology, Martin Zsarnóczky">
-    
-    <title>Publications - Dr. Martin Zsarnóczky</title>
+    <meta name="description" content="Complete list of publications by Dr. Martin Zsarnoczky - 205 research works on quality of life, gerontology, and social policy.">
+    <title>Publications - Dr. Martin Zsarnoczky (205 works)</title>
     <link rel="stylesheet" href="style.css">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,11 +32,54 @@
             color: var(--color-text-light);
         }
         
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: var(--space-md);
+            max-width: 800px;
+            margin: var(--space-lg) auto;
+        }
+        
+        .stat-card {
+            text-align: center;
+            padding: var(--space-md);
+            background: white;
+            border: 1px solid var(--color-border);
+        }
+        
+        .stat-card-number {
+            font-family: var(--font-serif);
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--color-primary);
+        }
+        
+        .stat-card-label {
+            font-size: 0.9rem;
+            color: var(--color-text-light);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        
+        .filter-section {
+            background: var(--color-bg-secondary);
+            padding: var(--space-md);
+            margin-bottom: var(--space-lg);
+            border-radius: var(--border-radius);
+        }
+        
+        .search-box {
+            width: 100%;
+            padding: var(--space-sm);
+            font-size: 1rem;
+            border: 1px solid var(--color-border);
+            margin-bottom: var(--space-sm);
+        }
+        
         .filter-tabs {
             display: flex;
             justify-content: center;
             gap: var(--space-sm);
-            margin-bottom: var(--space-lg);
             flex-wrap: wrap;
         }
         
@@ -67,19 +108,27 @@
         }
         
         .year-title {
-            font-size: 1.5rem;
+            font-size: 1.8rem;
             color: var(--color-accent);
             margin-bottom: var(--space-md);
             padding-bottom: var(--space-sm);
             border-bottom: 2px solid var(--color-border);
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+        }
+        
+        .year-count {
+            font-size: 1rem;
+            color: var(--color-text-light);
+            font-weight: normal;
         }
     </style>
 </head>
 <body>
-    <!-- Navigation -->
     <nav class="nav">
         <div class="nav-container">
-            <a href="index.html" class="nav-logo">Dr. Martin Zsarnóczky</a>
+            <a href="index.html" class="nav-logo">Dr. Martin Zsarnoczky</a>
             <div class="nav-links">
                 <a href="index.html#about">About</a>
                 <a href="index.html#research">Research</a>
@@ -92,252 +141,2662 @@
     <div class="publications-page">
         <div class="container">
             <div class="publications-header">
-                <h1>Publications</h1>
-                <p>Research contributions in quality of life, gerontology, and social policy</p>
+                <h1>Complete Publications</h1>
+                <p>Research contributions spanning 17 years (2009-2025)</p>
             </div>
 
-            <div class="filter-tabs">
-                <button class="filter-tab active">All</button>
-                <button class="filter-tab">Books</button>
-                <button class="filter-tab">Journal Articles</button>
-                <button class="filter-tab">Conference Papers</button>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-card-number">205</div>
+                    <div class="stat-card-label">Total Works</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-card-number">42</div>
+                    <div class="stat-card-label">Journal Articles</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-card-number">12</div>
+                    <div class="stat-card-label">Books</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-card-number">53</div>
+                    <div class="stat-card-label">Conference Papers</div>
+                </div>
             </div>
 
-            <!-- 2021 Publications -->
-            <div class="year-section">
-                <h2 class="year-title">2021</h2>
-                
+            <div class="filter-section">
+                <input type="text" class="search-box" id="searchBox" placeholder="🔍 Search by title, author, or keyword...">
+                <div class="filter-tabs">
+                    <button class="filter-tab active" data-filter="all">All (205)</button>
+                    <button class="filter-tab" data-filter="article">Journal Articles (42)</button>
+                    <button class="filter-tab" data-filter="book">Books (12)</button>
+                    <button class="filter-tab" data-filter="conference">Conference (53)</button>
+                    <button class="filter-tab" data-filter="inbook">Book Chapters (16)</button>
+                </div>
+            </div>
+
+            <div class="year-section" data-year="2025">
+                <h2 class="year-title">2025 <span class="year-count">(2 publications)</span></h2>
                 <div class="publication-list">
-                    <article class="publication-item featured">
-                        <div class="publication-type">Monograph</div>
-                        <h3 class="publication-title">Idősélet Vizsgálata Nagykanizsán 2009-2019 között</h3>
-                        <div class="publication-subtitle">Examination of Elderly Life in Nagykanizsa 2009-2019</div>
-                        <div class="publication-authors">Zsarnóczky, M., Keller, K., & Tóth-Kaszás, N.</div>
+
+                    <article class="publication-item" data-type="article">
+                        <div class="publication-type">📄 Journal Article</div>
+                        <h3 class="publication-title">Sustainability of Remote Work After the Pandemic. The Relationship Between Managerial Support, Flexibility and Employee Satisfaction</h3>
+                        <div class="publication-authors">Módosné Szalai, Szilvia and Zsarnóczky, Martin Balázs and Poyda-Nosyk, Nina and Vékony, Bence and Dávid, Lóránt Dénes and Csendes, István</div>
+
                         <div class="publication-meta">
-                            <span>MATRALAB Nonprofit Kft., Parádsasvár</span>
-                            <span>ISBN: 978-615-6420-00-8 (Print)</span>
-                            <span>ISBN: 978-615-6420-01-5 (PDF)</span>
+                            <span>JOURNAL OF CULTURAL ANALYSIS AND SOCIAL CHANGE | Vol. 10 | pp. 2425-2434</span>
                         </div>
-                        <p class="publication-abstract">
-                            <strong>Abstract (English):</strong> This comprehensive research examines the quality of life and well-being of elderly residents in Nagykanizsa, Hungary, over a decade-long period (2009-2019). Based on survey data from 1,000 participants and in-depth interviews with stakeholders, the study reveals the "Nagykanizsa Model" - a unique community-based approach to active ageing through senior clubs and social engagement programs. Key findings demonstrate that elderly individuals participating in community activities report significantly higher life satisfaction and well-being scores compared to isolated peers.
-                        </p>
+
                         <div class="publication-links">
-                            <a href="#" class="btn-link">PDF</a>
-                            <a href="#" class="btn-link">DOI (Pending)</a>
-                            <a href="https://online.fliphtml5.com/zrujh/rlgp/" class="btn-link" target="_blank">View Online</a>
+                            <a href="https://doi.org/10.64753/jcasc.v10i4.3265" class="btn-link" target="_blank">DOI</a> <a href="https://m2.mtmt.hu/api/publication/36495993" class="btn-link" target="_blank">MTMT</a>
                         </div>
                     </article>
+                    <article class="publication-item" data-type="misc">
+                        <div class="publication-type">📝 Publication</div>
+                        <h3 class="publication-title">Research for TRAN Committee – Role of the longevity economy in the tourism sector, European Parliament, CASP, Policy Department, Directorate for Transport, Employment and Social Affairs, Brussels</h3>
+                        <div class="publication-authors">Gaušas, S. and Leiputė, B. and Christenko, A. and Langham, E. and Szabó, R. and Tashkenbayev, M. and Balderas, Cejudo A. and Zsarnóczky, Martin Balázs and Buhalis, D.</div>
 
-                    <article class="publication-item">
-                        <div class="publication-type">Journal Article</div>
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/35747602" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <div class="year-section" data-year="2024">
+                <h2 class="year-title">2024 <span class="year-count">(2 publications)</span></h2>
+                <div class="publication-list">
+
+                    <article class="publication-item" data-type="misc">
+                        <div class="publication-type">📝 Publication</div>
+                        <h3 class="publication-title">What are the challenges of expanding into the US?. Road map to the US market entry program. 1st day Debrecen, Hungary 3/25/2024. Chamber of Commerce and Industry of Hajdu-Bihar County.</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/34771179" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="misc">
+                        <div class="publication-type">📝 Publication</div>
+                        <h3 class="publication-title">The strength of the US market. Road map to the US market entry program. 2nd day Budapest, Hungary 3/26/2024 Budapest Chamber of Commerce and Industry</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/34771183" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <div class="year-section" data-year="2023">
+                <h2 class="year-title">2023 <span class="year-count">(9 publications)</span></h2>
+                <div class="publication-list">
+
+                    <article class="publication-item" data-type="misc">
+                        <div class="publication-type">📝 Publication</div>
+                        <h3 class="publication-title">The importance of a stronger Atlantic business relationship. Trade Mission to Hungary and the Czech Republic, Budapest Chamber of Commerce and Industry, 27th September 2023</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/34300162" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="article">
+                        <div class="publication-type">📄 Journal Article</div>
+                        <h3 class="publication-title">Social Impact Investing Opportunities in eHealth</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs and Zsarnoczky, Dulhazi Fanni</div>
+
+                        <div class="publication-meta">
+                            <span>MAGYAR GERONTOLÓGIA | Vol. 2023 | pp. 60</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/34741802" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="article">
+                        <div class="publication-type">📄 Journal Article</div>
+                        <h3 class="publication-title">Social Impact Development Company Trends: from CSR to ESG</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs and Vinogradov, Szergej</div>
+
+                        <div class="publication-meta">
+                            <span>MAGYAR GERONTOLÓGIA | Vol. 2023 | pp. 53</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/34741800" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="article">
+                        <div class="publication-type">📄 Journal Article</div>
+                        <h3 class="publication-title">Proper Collaboration between Social Impact and ESG in Long-term Care</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>MAGYAR GERONTOLÓGIA | Vol. 2023 | pp. 51</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/34741801" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="article">
+                        <div class="publication-type">📄 Journal Article</div>
+                        <h3 class="publication-title">Promising European research results to improve hospitality in healthcare by eHealth</h3>
+                        <div class="publication-authors">Zsarnóczky-Dulházi, Fanni and Zsarnóczky, Martin Balázs and Kopper, Bence and Kárpáti, József and Molnár, Csilla and Gogo, Fredrick Collins Adol and Dávid, Lóránt Dénes</div>
+
+                        <div class="publication-meta">
+                            <span>INTERNATIONAL JOURNAL OF HOSPITALITY MANAGEMENT | Vol. 112 | pp. 1-5</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://doi.org/10.1016/j.ijhm.2022.103411" class="btn-link" target="_blank">DOI</a> <a href="https://m2.mtmt.hu/api/publication/33546658" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="misc">
+                        <div class="publication-type">📝 Publication</div>
+                        <h3 class="publication-title">How Senior Housing Developers should deal with „S“ in ESG. 3. Jahreskonferenz SENIOR LIVING Umsetzbare Konzepte für die Baby-Boomer Generation in Kommunen und Städten, 18. und 19. Oktober 2023 SZ-Hochhaus, München</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/34205461" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="misc">
+                        <div class="publication-type">📝 Publication</div>
+                        <h3 class="publication-title">How Has Texas Benefitted From Leadership In Energy?. Budapest Agenda, Ministry of Energy</h3>
+                        <div class="publication-authors">Ern, McKelvey and Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/34300073" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="misc">
+                        <div class="publication-type">📝 Publication</div>
+                        <h3 class="publication-title">ESG definitions in transition</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>pp. 30</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/34401566" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="misc">
+                        <div class="publication-type">📝 Publication</div>
+                        <h3 class="publication-title">ATLANTIC BUSINESS PRINCIPLES. Trade Mission to Hungary and the Czech Republic, Czech Invest Brno, 25th September 2023</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/34300109" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <div class="year-section" data-year="2022">
+                <h2 class="year-title">2022 <span class="year-count">(14 publications)</span></h2>
+                <div class="publication-list">
+
+                    <article class="publication-item" data-type="inbook">
+                        <div class="publication-type">📖 Book Chapter</div>
+                        <h3 class="publication-title">Összehasonlító borturisztikai folyamatok egy spanyolországi és egy hazai példán keresztül</h3>
+                        <div class="publication-authors">Paróczai, Márta and Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>Együttműködés, partnerség, hálózatok a turizmusban | pp. 92-101</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/33035480" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="misc">
+                        <div class="publication-type">📝 Publication</div>
+                        <h3 class="publication-title">eHealth és a Covid19 pandémia kapcsolata a határon átnyúló kanadai egészségügyi szolgáltatási rendszerekben. V Egészségturizmus konferencia eladásanyag</h3>
+                        <div class="publication-authors">Zsarnóczky-Dulházi, Fanni and Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/32729313" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="book">
+                        <div class="publication-type">📚 Book</div>
+                        <h3 class="publication-title">The essence of successful aging: life quality and well-being (Second edition)</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>Quant Holding Corp.</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/32754488" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="misc">
+                        <div class="publication-type">📝 Publication</div>
+                        <h3 class="publication-title">SHHA REPORT EDITION EXPO REAL 2022 (Munchen, Germany). AN OPEN DIALOGUE ON AGING</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>pp. 28</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/33157411" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="misc">
+                        <div class="publication-type">📝 Publication</div>
+                        <h3 class="publication-title">Presentation of cross-border health tourism processes through the example of North America</h3>
+                        <div class="publication-authors">Zsarnóczky-Dulházi, Fanni and Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>V. ZALAEGERSZEGI EGÉSZSÉGTURIZMUS KONFERENCIA ABSZTRAKT KÖTET | pp. 65-65</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/32729312" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="article">
+                        <div class="publication-type">📄 Journal Article</div>
+                        <h3 class="publication-title">Museal Indoor Air Quality and Public Health: An Integrated Approach for Exhibits Preservation and Ensuring Human Health</h3>
+                        <div class="publication-authors">Ilieș, Dorina Camelia and Safarov, Bahodirhon and Caciora, Tudor and Ilieș, Alexandru and Grama, Vasile and Ilies, Gabriela and Huniadi, Anca and Zharas, Berdenov and Hodor, Nicolaie and Sandor, Mircea and Zsarnóczky, Martin Balázs and Pantea, Emilia and Herman, Grigore Vasile and Dejeu, Paula and Szabo-Alexi, Mariana and Dávid, Lóránt Dénes</div>
+
+                        <div class="publication-meta">
+                            <span>SUSTAINABILITY | Vol. 14</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://doi.org/10.3390/su14042462" class="btn-link" target="_blank">DOI</a> <a href="https://m2.mtmt.hu/api/publication/32696652" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="misc">
+                        <div class="publication-type">📝 Publication</div>
+                        <h3 class="publication-title">Határon átnyúló egészségturisztikai folyamatok bemutatása Észak-amerikai példán keresztül</h3>
+                        <div class="publication-authors">Zsarnóczky-Dulházi, Fanni and Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>V. ZALAEGERSZEGI EGÉSZSÉGTURIZMUS KONFERENCIA ABSZTRAKT KÖTET | pp. 64-64</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/32729310" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="inbook">
+                        <div class="publication-type">📖 Book Chapter</div>
+                        <h3 class="publication-title">Eye-Tracking Analysis of Chosen Tourist Offers</h3>
+                        <div class="publication-authors">Mariusz, Barczak and Piotr, Szymański and Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>Integrating New Technologies in International Business: Opportunities and Challenges | pp. 293-306</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://doi.org/10.1201/9781003130352-18" class="btn-link" target="_blank">DOI</a> <a href="https://m2.mtmt.hu/api/publication/31674232" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="book">
+                        <div class="publication-type">📚 Book</div>
+                        <h3 class="publication-title">Együttműködés, partnerség, hálózatok a turizmusban</h3>
+                        <div class="publication-authors">Unknown</div>
+
+                        <div class="publication-meta">
+                            <span>Kodolányi János Egyetem; Research Centre for Astronomy and Earth Sciences, Geographical Institute; Magyar Földrajzi Társaság</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/32854253" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="inbook">
+                        <div class="publication-type">📖 Book Chapter</div>
+                        <h3 class="publication-title">Early recognition of dementia within the family.</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs and Zsarnoczky, Dulhazi Fanni</div>
+
+                        <div class="publication-meta">
+                            <span>Pozitív Idősödés 1. | pp. 391</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/34737696" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="inbook">
+                        <div class="publication-type">📖 Book Chapter</div>
+                        <h3 class="publication-title">E-health alkalmazások növekvő jelentősége az időskori aktivitásban a COVID19 pandémia helyzet alatt.</h3>
+                        <div class="publication-authors">Zsarnoczky, Dulhazi Fanni and Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>Pozitív Idősödés 1. | pp. 1</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/34737698" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="article">
+                        <div class="publication-type">📄 Journal Article</div>
+                        <h3 class="publication-title">Contexts of networking and travelling in the light of Buddhist &quot;wisdom&quot; and life philosophy - management of accessibility and barrier generation in tourism</h3>
+                        <div class="publication-authors">Farkas, Jácint and Raffay, Zoltán and Pallás, Edith and Fekete-Frojimovics, Zsófia and Zsarnóczky, Martin Balázs and Dávid, Lóránt Dénes</div>
+
+                        <div class="publication-meta">
+                            <span>SUSTAINABILITY | Vol. 14</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://doi.org/10.3390/su141811123" class="btn-link" target="_blank">DOI</a> <a href="https://m2.mtmt.hu/api/publication/33081210" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="article">
+                        <div class="publication-type">📄 Journal Article</div>
+                        <h3 class="publication-title">A közösségi finanszírozás helye és szerepe a mai társadalmakban, különös tekintettel hazánkra és az egészségügyi kiadásokra</h3>
+                        <div class="publication-authors">Zsarnóczky-Dulházi, Fanni and Kopper, Bence and Zsarnóczky, Martin Balázs and Dávid, Lóránt Dénes</div>
+
+                        <div class="publication-meta">
+                            <span>CIVIL SZEMLE | Vol. 19 | pp. 41-56</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/32788272" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="article">
+                        <div class="publication-type">📄 Journal Article</div>
+                        <h3 class="publication-title">A KÖZÖSSÉGI FINANSZÍROZÁSHELYE ÉS SZEREPE A MAI TÁRSADALMAKBAN , KÜLÖNÖS TEKINTETTELHAZÁNKRA ÉS AZ EGÉSZSÉGÜGYI KIADÁSOKRA</h3>
+                        <div class="publication-authors">Zsarnóczky-Dulházi, Fanni and Kopper, Bence and Zsarnóczky, Martin Balázs and Dávid, Lóránt Dénes</div>
+
+                        <div class="publication-meta">
+                            <span>CIVIL SZEMLE | Vol. 19 | pp. 41</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/32789666" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <div class="year-section" data-year="2021">
+                <h2 class="year-title">2021 <span class="year-count">(14 publications)</span></h2>
+                <div class="publication-list">
+
+                    <article class="publication-item" data-type="misc">
+                        <div class="publication-type">📝 Publication</div>
+                        <h3 class="publication-title">TÁRSASJÁTÉK LEHETSÉGES FELHASZNÁLÁSA AZ OKTATÁSBAN EGY-PILOT FELMÉRÉS EREDMÉNYEI</h3>
+                        <div class="publication-authors">Tenk, András and Tóth, L Bálint and Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/32475343" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="misc">
+                        <div class="publication-type">📝 Publication</div>
+                        <h3 class="publication-title">LEHETSÉGES PANDÉMIA UTÁNI FORGATÓKÖNYVEK A TURIZMUS SZEREPLŐI SZÁMÁRA</h3>
+                        <div class="publication-authors">Remenyik, Bulcsú and Vetró, Richárd and Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/32475341" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="book">
+                        <div class="publication-type">📚 Book</div>
+                        <h3 class="publication-title">Idősélet vizsgálata Nagykanizsán 2009–2019 között</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs and Keller, Krisztina and Kaszás, Nikoletta</div>
+
+                        <div class="publication-meta">
+                            <span>Matralab NGO</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/32555316" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="article">
+                        <div class="publication-type">📄 Journal Article</div>
                         <h3 class="publication-title">Idősek városképe – egy városmárka-asszociációs kutatás korcsoportspecifikus eredményei</h3>
-                        <div class="publication-subtitle">Elderly cityscape – Age-specific results of a city brand association research</div>
-                        <div class="publication-authors">Kovács, L., Zsarnóczky, M., Keller, K., & Tóth-Kaszás, N.</div>
+                        <div class="publication-authors">Kovács, László and Zsarnóczky, Martin Balázs and Keller, Krisztina and Kaszás, Nikoletta</div>
+
                         <div class="publication-meta">
-                            <span>Tér és Társadalom, 35(1): 113-135</span>
-                            <span>DOI: 10.17649/TET.35.1.3208</span>
+                            <span>TÉR ÉS TÁRSADALOM | Vol. 35 | pp. 113-135</span>
                         </div>
-                        <p class="publication-abstract">
-                            Research on city brand associations from the perspective of elderly residents in Nagykanizsa, examining how older adults perceive urban spaces and contribute to city brand development.
-                        </p>
+
                         <div class="publication-links">
-                            <a href="https://tet.rkk.hu/index.php/TeT/article/view/3208" class="btn-link" target="_blank">View Article</a>
-                            <a href="http://real.mtak.hu/122512/" class="btn-link" target="_blank">REAL</a>
+                            <a href="https://doi.org/10.17649/TET.35.1.3208" class="btn-link" target="_blank">DOI</a> <a href="https://m2.mtmt.hu/api/publication/31888769" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="misc">
+                        <div class="publication-type">📝 Publication</div>
+                        <h3 class="publication-title">Hullámok között - turizmus és vendéglátóipari pillanatképek a Covid19 pandémia idején. 6-ik Mátrai Nemzetközi Tudományos Konferencia és Workshop Konferencia Kötet</h3>
+                        <div class="publication-authors">Unknown</div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/32475336" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="conference">
+                        <div class="publication-type">🎤 Conference Paper</div>
+                        <h3 class="publication-title">Foreword written by the editor</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>Conference Proceeding of the 6th Jubilee International Scientific Conference &amp; Workshop in the Matra Mountains | pp. 1</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/32475340" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="conference">
+                        <div class="publication-type">🎤 Conference Paper</div>
+                        <h3 class="publication-title">E-health alkalmazások szerepének növekvő jelentősége a COVID19 pandémia alatt</h3>
+                        <div class="publication-authors">Zsarnóczky-Dulházi, Fanni and Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>Hullámok között - turizmus és vendéglátóipari pillanatképek a Covid19 pandémia idején. 6-ik Mátrai Nemzetközi Tudományos Konferencia és Workshop Konferencia Kötet | pp. 23</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/32508393" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="misc">
+                        <div class="publication-type">📝 Publication</div>
+                        <h3 class="publication-title">Digitális jövő a jelenben, folyamatok, trendek, nemzetközi jó gyakorlatok</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/32475344" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="inbook">
+                        <div class="publication-type">📖 Book Chapter</div>
+                        <h3 class="publication-title">DOUBLE DOSE OF STEREOTYPING: An Overview on the Situation of Women with Disabilities in India with a Special Focus on Education Scenario</h3>
+                        <div class="publication-authors">Ambuj, Sharma and Reena, Malik and Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>Educational System of Contemporary India | pp. 11</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/32492134" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="misc">
+                        <div class="publication-type">📝 Publication</div>
+                        <h3 class="publication-title">Conference Proceeding of the 6th Jubilee International Scientific Conference &amp; Workshop in the Matra Mountains</h3>
+                        <div class="publication-authors">Unknown</div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/32475339" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="article">
+                        <div class="publication-type">📄 Journal Article</div>
+                        <h3 class="publication-title">Civil szervezetek egészségformáló hatása a közösségimédia-platformokon keresztül</h3>
+                        <div class="publication-authors">Zsarnóczky-Dulházi, Fanni and Kopper, Bence and Zsarnóczky, Martin Balázs and Dávid, Lóránt Dénes</div>
+
+                        <div class="publication-meta">
+                            <span>CIVIL SZEMLE | Vol. 18 | pp. 27-40</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/31965818" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="conference">
+                        <div class="publication-type">🎤 Conference Paper</div>
+                        <h3 class="publication-title">Akadálymentesség, mint &quot;szükséglet&quot; alkalmazhatósága a mindennapokban</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs and Ambuj, Sharma</div>
+
+                        <div class="publication-meta">
+                            <span>Hullámok között - turizmus és vendéglátóipari pillanatképek a Covid19 pandémia idején. 6-ik Mátrai Nemzetközi Tudományos Konferencia és Workshop Konferencia Kötet | pp. 21</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/32492141" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="inbook">
+                        <div class="publication-type">📖 Book Chapter</div>
+                        <h3 class="publication-title">A szenior turizmus kihívásai a COVID19 járványhelyzet idején</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>V. Turizmus és Biztonság Nemzetközi Tudományos Konferencia tanulmánykötet | pp. 256-264</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/32074182" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="misc">
+                        <div class="publication-type">📝 Publication</div>
+                        <h3 class="publication-title">A Covid19 pandémia hatása a mobilitás és az egészségügyi applikációk kapcsolatában. IV. Utazás a tudományban konferencia Budapesti Corvinus Egyetem</h3>
+                        <div class="publication-authors">Zsarnóczky-Dulházi, Fanni and Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/31896901" class="btn-link" target="_blank">MTMT</a>
                         </div>
                     </article>
                 </div>
             </div>
 
-            <!-- 2019 Publications -->
-            <div class="year-section">
-                <h2 class="year-title">2019</h2>
-                
+            <div class="year-section" data-year="2020">
+                <h2 class="year-title">2020 <span class="year-count">(15 publications)</span></h2>
                 <div class="publication-list">
-                    <article class="publication-item">
-                        <div class="publication-type">Book</div>
-                        <h3 class="publication-title">A sikeres időskor esszenciái: életminőség és jól-lét</h3>
-                        <div class="publication-subtitle">Essentials of Successful Ageing: Quality of Life and Well-being</div>
-                        <div class="publication-authors">Zsarnóczky, M.</div>
-                        <div class="publication-meta">
-                            <span>MATRALAB Nonprofit Kft., Parádsasvár</span>
-                            <span>ISBN: 978-615-8116-03-9</span>
-                        </div>
-                        <p class="publication-abstract">
-                            Comprehensive examination of successful ageing processes, focusing on quality of life factors and well-being optimization for elderly populations. Integrates research findings from international studies including fieldwork in the Himalayan region.
-                        </p>
+
+                    <article class="publication-item" data-type="misc">
+                        <div class="publication-type">📝 Publication</div>
+                        <h3 class="publication-title">Vendéglátóipar kilátásai a Covid19 járvány hullámait követően, nemzetközi és hazai kitekintés.. Kodolányi János Egyetem tematikus hét - 2020.10.12 -15.</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
                         <div class="publication-links">
-                            <a href="https://www.scribd.com/book/436805318/" class="btn-link" target="_blank">Scribd</a>
+                            <a href="https://m2.mtmt.hu/api/publication/31666017" class="btn-link" target="_blank">MTMT</a>
                         </div>
                     </article>
+                    <article class="publication-item" data-type="inbook">
+                        <div class="publication-type">📖 Book Chapter</div>
+                        <h3 class="publication-title">Turizmus és desztináció tervezési folyamatok a Johnston modell alapján a Matra Resort szenior üdülőhely esettanulmánya</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
 
-                    <article class="publication-item">
-                        <div class="publication-type">Book</div>
+                        <div class="publication-meta">
+                            <span>Kreativitás, változás, reziliencia. III. Nemzetközi Turizmusmarketing Konferencia: Tanulmánykötet | pp. 72-82</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/31404333" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="misc">
+                        <div class="publication-type">📝 Publication</div>
+                        <h3 class="publication-title">The challenges of ageing focus on solidarity and equal opportunities in the European Union.</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>Education - Health - Society. | pp. 273</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/31818835" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="book">
+                        <div class="publication-type">📚 Book</div>
+                        <h3 class="publication-title">The Essence of Successful Aging. Life Quality and Well-being</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>Ebizont Ltd</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/31369692" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="article">
+                        <div class="publication-type">📄 Journal Article</div>
+                        <h3 class="publication-title">Perspectives and Challenges of European Ageing</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>FREESIDE EUROPE ONLINE ACADEMIC JOURNAL: MODERN CULTURAL LITERARY AND LINGUISTIC PERSPECTIVES | Vol. 2</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://doi.org/10.51313/Freeside-2020-2-10" class="btn-link" target="_blank">DOI</a> <a href="https://m2.mtmt.hu/api/publication/31940729" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="misc">
+                        <div class="publication-type">📝 Publication</div>
+                        <h3 class="publication-title">Kreatív turizmusfejlesztés a szenior korosztály számára, jó gyakorlatok bemutatása. VI Egészségturizmus Szakmai Napok Semmelweis Egyetem</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/31666012" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="conference">
+                        <div class="publication-type">🎤 Conference Paper</div>
+                        <h3 class="publication-title">Kreativitás és kooperáció a turizmus tervezés folyamataiban - Matra Resort Szenior üdülőhely esettanulmánya; Creativity and cooperation in tourism planning – a case study of the Matra Resort for seniors</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>Kreativitás, változás, reziliencia: III. Nemzetközi Turizmusmarketing Konferencia. Absztraktkötet | pp. 36</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/31404328" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="misc">
+                        <div class="publication-type">📝 Publication</div>
+                        <h3 class="publication-title">Impact Investing, Senior Living &amp; Healthcare</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/31605136" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="book">
+                        <div class="publication-type">📚 Book</div>
+                        <h3 class="publication-title">Education - Health - Society.. An International Perspective</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>Wydawnictwo Uczelniane WSG</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/31818831" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="article">
+                        <div class="publication-type">📄 Journal Article</div>
+                        <h3 class="publication-title">Early recognition of dementia within the family</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>MAGYAR GERONTOLÓGIA | Vol. 12 | pp. 17</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/31678022" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="article">
+                        <div class="publication-type">📄 Journal Article</div>
+                        <h3 class="publication-title">E-health alkalmazások növekvő jelentősége az időskori aktivitásban a COVID19 járványhelyzet alatt</h3>
+                        <div class="publication-authors">Zsarnóczky-Dulházi, Fanni and Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>MAGYAR GERONTOLÓGIA | Vol. 12 | pp. 66-67</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/31751788" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="misc">
+                        <div class="publication-type">📝 Publication</div>
+                        <h3 class="publication-title">Conference Proceeding of the 5th Jubilee International Scientific Conference in the Matra Mountains</h3>
+                        <div class="publication-authors">Unknown</div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/31600449" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="inproceedings">
+                        <div class="publication-type">🎤 Conference Proceedings</div>
+                        <h3 class="publication-title">ACCESSIBILTY IN TOURISM, COMPLIENCE OR REGULATORY?</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs and Zsarnóczky-Dulházi, Fanni and Remenyik, Bulcsú</div>
+
+                        <div class="publication-meta">
+                            <span>Utazás a tudományban 2020 | pp. 68-71</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/31902910" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="article">
+                        <div class="publication-type">📄 Journal Article</div>
+                        <h3 class="publication-title">A demencia korai diagnózisának felismerhetősége és a családokon belüli megoldási lehetőségek támogatása egy új intézmény támogató tevékenységén keresztül</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs and Zsarnóczky-Dulházi, Fanni</div>
+
+                        <div class="publication-meta">
+                            <span>MAGYAR GERONTOLÓGIA | Vol. 12 | pp. 64-65</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/31678024" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="misc">
+                        <div class="publication-type">📝 Publication</div>
+                        <h3 class="publication-title">A Covid19 pandémia utáni várható trendek a nemzetközi szállodaipari vendéglátásban. Kodolányi János Egyetem projekt hét 2020.10.05.</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/31676888" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <div class="year-section" data-year="2019">
+                <h2 class="year-title">2019 <span class="year-count">(30 publications)</span></h2>
+                <div class="publication-list">
+
+                    <article class="publication-item" data-type="inproceedings">
+                        <div class="publication-type">🎤 Conference Proceedings</div>
+                        <h3 class="publication-title">„Mentesség” vizsgálata a budapesti vendéglátóipar kínálatában</h3>
+                        <div class="publication-authors">Lorger, Réka and Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>LXI. Georgikon Napok konferenciakötete | pp. 553-561</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/31011860" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="misc">
+                        <div class="publication-type">📝 Publication</div>
+                        <h3 class="publication-title">VII. Magyar Turizmusföldrajzi Szimpózium 2019. Absztrakt kötet</h3>
+                        <div class="publication-authors">Unknown</div>
+
+                        <div class="publication-meta">
+                            <span>Kodolányi János Egyetem</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/30799042" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="misc">
+                        <div class="publication-type">📝 Publication</div>
+                        <h3 class="publication-title">Upcoming challenges in senior tourism</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/30629107" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="article">
+                        <div class="publication-type">📄 Journal Article</div>
+                        <h3 class="publication-title">The Professional and Economic Development of Individuals with Disabilities in the Hospitality Sector with a Focus on the Importance of Training and Skill Enhancement at all levels: Hungarian Perspective</h3>
+                        <div class="publication-authors">Sharma, Ambuj and Zsarnóczky, Martin Balázs and Dunay, Anna</div>
+
+                        <div class="publication-meta">
+                            <span>LITTERA SCRIPTA | Vol. 12</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://doi.org/10.36708/Littera_Scripta2019/2/10" class="btn-link" target="_blank">DOI</a> <a href="https://m2.mtmt.hu/api/publication/31110364" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="article">
+                        <div class="publication-type">📄 Journal Article</div>
+                        <h3 class="publication-title">The Phenomenon of European Accessibility as a Special Niche in Active Tourism</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs and Zsarnóczky-Dulházi, Fanni</div>
+
+                        <div class="publication-meta">
+                            <span>JOURNAL OF TOURISM CHALLENGES AND TRENDS | Vol. 12 | pp. 85-100</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/31619982" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="book">
+                        <div class="publication-type">📚 Book</div>
                         <h3 class="publication-title">The Challenges of Modern Tourism Planning</h3>
-                        <div class="publication-authors">Zsarnóczky, M.</div>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
                         <div class="publication-meta">
-                            <span>MATRALAB Nonprofit Kft., Parádsasvár</span>
-                            <span>ISBN: 978-615-8116-01-5</span>
+                            <span>Matralab NGO</span>
                         </div>
+
                         <div class="publication-links">
-                            <a href="#" class="btn-link">PDF</a>
+                            <a href="https://m2.mtmt.hu/api/publication/30687719" class="btn-link" target="_blank">MTMT</a>
                         </div>
                     </article>
+                    <article class="publication-item" data-type="article">
+                        <div class="publication-type">📄 Journal Article</div>
+                        <h3 class="publication-title">Shift-Share Analysis of the Impact of Tourism on Local Incomes in Hungary</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
 
-                    <article class="publication-item">
-                        <div class="publication-type">Book Chapter</div>
-                        <h3 class="publication-title">A kompatibilitás fontossága az akadálymentes turizmus speciális szegmensében</h3>
-                        <div class="publication-authors">Zsarnóczky, M.</div>
                         <div class="publication-meta">
-                            <span>In: #Turizmus #szálloda #vendéglátás (pp. 173-182)</span>
-                            <span>Líceum Kiadó, Eger</span>
+                            <span>ANNALES GEOGRAPHICAE / GEOGRAFIJOS METRAŠTIS. THE GEOGRAPHICAL YEARBOOK | Vol. 2018 | pp. 47-60</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/30635895" class="btn-link" target="_blank">MTMT</a>
                         </div>
                     </article>
+                    <article class="publication-item" data-type="book">
+                        <div class="publication-type">📚 Book</div>
+                        <h3 class="publication-title">Rurális térségek a 21. században tudományos konferencia : tanulmánykötet</h3>
+                        <div class="publication-authors">Unknown</div>
 
-                    <article class="publication-item">
-                        <div class="publication-type">Journal Article</div>
+                        <div class="publication-meta">
+                            <span>Association of Hungarian PHD and DLA Students</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/30822979" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="misc">
+                        <div class="publication-type">📝 Publication</div>
+                        <h3 class="publication-title">Modern kihívások és régiós sajátosságok hatásai az életminőségben. Effects of modern challenges and regional characteristics on life quality</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/30624128" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="misc">
+                        <div class="publication-type">📝 Publication</div>
+                        <h3 class="publication-title">Mediáció és a vállalkozásösztönzés kapcsolata a nagyvárosi terekben</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/31328713" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="conference">
+                        <div class="publication-type">🎤 Conference Paper</div>
+                        <h3 class="publication-title">Innovatív „coaching” technikák bemutatása sikeres lengyel idősgondozási példán keresztül</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs and Przemysław, Ziółkowski</div>
+
+                        <div class="publication-meta">
+                            <span>Nyíregyházi Gerontológiai Napok XII. Nemzetközi Tudományos Konferencia | pp. 17</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/30931245" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="conference">
+                        <div class="publication-type">🎤 Conference Paper</div>
+                        <h3 class="publication-title">Importance of Social Work in the Rural Regions</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>IV. Mátrai Nemzetközi Tudományos Konferencia Előadások és Poszterek Összefoglalói | pp. 19</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/30687730" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="misc">
+                        <div class="publication-type">📝 Publication</div>
+                        <h3 class="publication-title">IV. Mátrai Nemzetközi Tudományos Konferencia Előadások és Poszterek Összefoglalói</h3>
+                        <div class="publication-authors">Unknown</div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/30687724" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="conference">
+                        <div class="publication-type">🎤 Conference Paper</div>
+                        <h3 class="publication-title">Global Tourism Landscapes</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>Upcoming challenges in senior tourism | pp. 4</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/30629108" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="article">
+                        <div class="publication-type">📄 Journal Article</div>
+                        <h3 class="publication-title">Food Safety Challenges in the Tourism Processes</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs and Zsarnóczky-Dulházi, Fanni and Gogo, Fredrick Collins Adol and Mariusz, Barczak and Dávid, Lóránt Dénes</div>
+
+                        <div class="publication-meta">
+                            <span>RURAL SUSTAINABILITY RESEARCH | Vol. 41 | pp. 26-31</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://doi.org/10.2478/plua-2019-0005" class="btn-link" target="_blank">DOI</a> <a href="https://m2.mtmt.hu/api/publication/30765406" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="article">
+                        <div class="publication-type">📄 Journal Article</div>
+                        <h3 class="publication-title">Ecoenergy tourism, study into some aspects of relationship between use of renewable energy resources and sustainable regional and rural development</h3>
+                        <div class="publication-authors">Dávid, Lóránt Dénes and Molnár, Csilla and Kosmaczewska, Joanna and Fodor, Gyula and Zsarnóczky, Martin Balázs and Varga, Imre and Palencikova, Zuzana</div>
+
+                        <div class="publication-meta">
+                            <span>ENGINEERING FOR RURAL DEVELOPMENT | Vol. 18 | pp. 1478-1483</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://doi.org/10.22616/ERDev2019.18.N346" class="btn-link" target="_blank">DOI</a> <a href="https://m2.mtmt.hu/api/publication/30686958" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="conference">
+                        <div class="publication-type">🎤 Conference Paper</div>
+                        <h3 class="publication-title">Digitalizáció és kreativitás kapcsolata a szociális gazdaság területén</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>IV. Mátrai Nemzetközi Tudományos Konferencia Előadások és Poszterek Összefoglalói | pp. 18</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/30687728" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="misc">
+                        <div class="publication-type">📝 Publication</div>
+                        <h3 class="publication-title">Cultural understanding in the European continent I-VIII.. Special sessions in Nicosia, Cyprus</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/30930301" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="inbook">
+                        <div class="publication-type">📖 Book Chapter</div>
+                        <h3 class="publication-title">Bűnmegelőzés a turizmus által érintett közösségekben</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs and Molnár, László and Garamvölgyi, László</div>
+
+                        <div class="publication-meta">
+                            <span>III. Turizmus és Biztonság Nemzetközi Tudományos Konferencia : tanulmánykötet | pp. 142</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/30800552" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="misc">
+                        <div class="publication-type">📝 Publication</div>
+                        <h3 class="publication-title">Az egészségügyi applikációk lehetőségei a turizmusban</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs and Zsarnóczky-Dulházi, Fanni</div>
+
+                        <div class="publication-meta">
+                            <span>Turizmus 3.0 | pp. 141-153</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/30768245" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="article">
+                        <div class="publication-type">📄 Journal Article</div>
+                        <h3 class="publication-title">Az egészségturizmus folyamatainak terminológiai változásai</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>TURIZMUS BULLETIN | Vol. 19 | pp. 36-44</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://doi.org/10.14267/TURBULL.2019v19n1.4" class="btn-link" target="_blank">DOI</a> <a href="https://m2.mtmt.hu/api/publication/30633555" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="conference">
+                        <div class="publication-type">🎤 Conference Paper</div>
+                        <h3 class="publication-title">Az &quot;őszülő&quot; európai perifériák szociális kihívásai</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs and Mariusz, Barzcak</div>
+
+                        <div class="publication-meta">
+                            <span>VII. Magyar Turizmusföldrajzi Szimpózium 2019. Absztrakt kötet | pp. 105</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/30799898" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="conference">
+                        <div class="publication-type">🎤 Conference Paper</div>
+                        <h3 class="publication-title">An Examination of “Free From” in the Hospitality Market of Budapest</h3>
+                        <div class="publication-authors">Logner, Réka and Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>LXI. Georgikon Napok International Scientific Conference : Abstract volume | pp. 129</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/30830234" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="conference">
+                        <div class="publication-type">🎤 Conference Paper</div>
+                        <h3 class="publication-title">A turizmus, a rehabilitáció és a digitalizáció összefüggései</h3>
+                        <div class="publication-authors">Zsarnóczky-Dulházi, Fanni and Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>VII. Magyar Turizmusföldrajzi Szimpózium 2019. Absztrakt kötet | pp. 106</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/30799901" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="book">
+                        <div class="publication-type">📚 Book</div>
+                        <h3 class="publication-title">A sikeres időskor esszenciái életminőség és jól-lét</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>Matralab NGO</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/30924516" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="article">
+                        <div class="publication-type">📄 Journal Article</div>
                         <h3 class="publication-title">A palóc azonosságtudat kutatás eredményei az online média felhasználók és a gyöngyösi kortárs palóc tájház látogatói között</h3>
-                        <div class="publication-authors">Zsarnóczky, M.</div>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
                         <div class="publication-meta">
-                            <span>A Falu, 34(2): 5-16</span>
+                            <span>FALU | Vol. 34 | pp. 5-16</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/30739946" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="misc">
+                        <div class="publication-type">📝 Publication</div>
+                        <h3 class="publication-title">A magyarországi egészségturizmus vizsgálata egy XXII. kerületi idősek körében végzett kérdőíves felmérés alapján</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>Határtalan tudomány | pp. 218-227</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/30629115" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="misc">
+                        <div class="publication-type">📝 Publication</div>
+                        <h3 class="publication-title">A kompatibilitás fontossága az akadálymentes turizmus speciális szegmensében</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>#Turizmus #szálloda #vendéglátás : jubileumi kiadvány az Eszterházy Károly Egyetem Turizmus tanszék alapításának 10. évfordulója alkalmából | pp. 173-182</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/30924475" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="conference">
+                        <div class="publication-type">🎤 Conference Paper</div>
+                        <h3 class="publication-title">A coaching és szociális munka kapcsolata az akadálymentes desztinációk tervezésében</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>VII. Magyar Turizmusföldrajzi Szimpózium 2019. Absztrakt kötet | pp. 104</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/30799894" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="article">
+                        <div class="publication-type">📄 Journal Article</div>
+                        <h3 class="publication-title">A MÁTRA TURISZTIKAI TELJESÍTMÉNYE ÉS LEGÚJABB TURISZTIKAI TRENDJEI</h3>
+                        <div class="publication-authors">Benkő, Béla and Szőke, Szilvia and Gyurkó, Ádám and Zsarnóczky, Martin Balázs and Bujdosó, Zoltán</div>
+
+                        <div class="publication-meta">
+                            <span>ACTA CAROLUS ROBERTUS | Vol. 9 | pp. 5-13</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://doi.org/10.33032/acr.2019.9.2.5" class="btn-link" target="_blank">DOI</a> <a href="https://m2.mtmt.hu/api/publication/31134446" class="btn-link" target="_blank">MTMT</a>
                         </div>
                     </article>
                 </div>
             </div>
 
-            <!-- 2018 Publications -->
-            <div class="year-section">
-                <h2 class="year-title">2018</h2>
-                
+            <div class="year-section" data-year="2018">
+                <h2 class="year-title">2018 <span class="year-count">(46 publications)</span></h2>
                 <div class="publication-list">
-                    <article class="publication-item">
-                        <div class="publication-type">Book</div>
-                        <h3 class="publication-title">Egészségturizmus 2.0</h3>
-                        <div class="publication-subtitle">Health Tourism 2.0</div>
-                        <div class="publication-authors">Zsarnóczky, M.</div>
-                        <div class="publication-meta">
-                            <span>MATRALAB Nonprofit Kft., Parádsasvár</span>
-                            <span>ISBN: 978-615-0019-40-6</span>
+
+                    <article class="publication-item" data-type="misc">
+                        <div class="publication-type">📝 Publication</div>
+                        <h3 class="publication-title">The life quality and well-being in the aging processes of seniors. 4th Annual NY Hungarian Scientific Society Fundraising Gala and Dinner</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/30383344" class="btn-link" target="_blank">MTMT</a>
                         </div>
                     </article>
+                    <article class="publication-item" data-type="article">
+                        <div class="publication-type">📄 Journal Article</div>
+                        <h3 class="publication-title">The importance of tradition and folk customs in culinary tourism</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
 
-                    <article class="publication-item">
-                        <div class="publication-type">Book</div>
+                        <div class="publication-meta">
+                            <span>INTERCATHEDRA | pp. 95-102</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://doi.org/10.17306/J.INTERCATHEDRA.2018.00005" class="btn-link" target="_blank">DOI</a> <a href="https://m2.mtmt.hu/api/publication/3387863" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="article">
+                        <div class="publication-type">📄 Journal Article</div>
+                        <h3 class="publication-title">The future challenge of accessible tourism in the European Union</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>VADYBA: JOURNAL OF MANAGEMENT | Vol. 2 | pp. 39-43</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/30386479" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="article">
+                        <div class="publication-type">📄 Journal Article</div>
+                        <h3 class="publication-title">The Digital Future of the Tourism &amp; Hospitality Industry</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>BOSTON HOSPITALITY REVIEW | Vol. 6 | pp. 1-10</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/3390096" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="misc">
+                        <div class="publication-type">📝 Publication</div>
+                        <h3 class="publication-title">THE ROLE OF FOLK TRADITIONS IN HUNGARIAN GASTRO-TOURISM</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>&quot;Fenntarthatósági kihívások és válaszok&quot; [﻿elektronikus dok.﻿] [&quot;Sustainability challenges and answers&quot; ] [&quot;Herausforderungen und Antworten von Nachhaltigkeit&quot;] | pp. 268</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/30383283" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="misc">
+                        <div class="publication-type">📝 Publication</div>
+                        <h3 class="publication-title">Subjective life quality research among elderly people in one of the happiest Hungarian towns. European Week of Regions and Cities TOP30 Master Class</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/30383340" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="misc">
+                        <div class="publication-type">📝 Publication</div>
+                        <h3 class="publication-title">Subjective Life Quality Research among Elderly People in one of the Happiest Hungarian Towns</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/30389920" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="misc">
+                        <div class="publication-type">📝 Publication</div>
+                        <h3 class="publication-title">Senior Social Development in the Eastern European Border Countries</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/3390434" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="misc">
+                        <div class="publication-type">📝 Publication</div>
+                        <h3 class="publication-title">Regional and rural development processes in conflict zone</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/3408677" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="conference">
+                        <div class="publication-type">🎤 Conference Paper</div>
+                        <h3 class="publication-title">Parasport és az akadálymentes turizmus kapcsolata</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>III. Nemzetközi Mátrai Egészségturisztikai Konferencia | pp. 9</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/30378947" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="article">
+                        <div class="publication-type">📄 Journal Article</div>
+                        <h3 class="publication-title">Novel concepts in the health tourism industry</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>VADYBA: JOURNAL OF MANAGEMENT | pp. 67-73</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/3391240" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="misc">
+                        <div class="publication-type">📝 Publication</div>
+                        <h3 class="publication-title">Külföldi és belföldi turisták &quot;kedvenc&quot; turisztikai helyszíneinek különbségei</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs and György, Ottilia and Zsarnóczky-Dulházi, Fanni</div>
+
+                        <div class="publication-meta">
+                            <span>XIII. KHEOPS Nemzetközi Tudományos Konferencia: Gazdasági és társadalmi útkeresés | pp. 103</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/30386423" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="inbook">
+                        <div class="publication-type">📖 Book Chapter</div>
+                        <h3 class="publication-title">Külföldi és belföldi turisták &quot;kedvenc&quot; turisztikai helyszneinek különbségei</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs and György, Ottilia and Zsarnóczky-Dulházi, Fanni</div>
+
+                        <div class="publication-meta">
+                            <span>Gazdálkodástudományi kihívások a 21. században | pp. 91-99</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/30386434" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="book">
+                        <div class="publication-type">📚 Book</div>
+                        <h3 class="publication-title">Közgazdász Doktoranduszok és Kutatók IV. Téli Konferenciája. Konferenciakötet</h3>
+                        <div class="publication-authors">Unknown</div>
+
+                        <div class="publication-meta">
+                            <span>Association of Hungarian PHD and DLA Students</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/3407944" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="book">
+                        <div class="publication-type">📚 Book</div>
                         <h3 class="publication-title">Innováció és egészségtudatosság</h3>
-                        <div class="publication-subtitle">Innovation and Health Awareness</div>
-                        <div class="publication-authors">Zsarnóczky, M., & Zsarnóczky-Dulházi, F.</div>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs and Zsarnóczky-Dulházi, Fanni</div>
+
                         <div class="publication-meta">
-                            <span>MATRALAB Nonprofit Kft., Parádsasvár</span>
-                            <span>ISBN: 978-615-8116-00-8</span>
+                            <span>Matralab NGO</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/30383291" class="btn-link" target="_blank">MTMT</a>
                         </div>
                     </article>
+                    <article class="publication-item" data-type="misc">
+                        <div class="publication-type">📝 Publication</div>
+                        <h3 class="publication-title">Innovatív társadalom - Innovatív gazdaság. Absztraktkötet</h3>
+                        <div class="publication-authors">Unknown</div>
 
-                    <article class="publication-item">
-                        <div class="publication-type">Book Chapter</div>
+                        <div class="publication-meta">
+                            <span>Association of Hungarian PHD and DLA Students</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/30354261" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="conference">
+                        <div class="publication-type">🎤 Conference Paper</div>
+                        <h3 class="publication-title">Innovation analysis of the historical processes of hospitality</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>LX. Georgikon Napok: 60 éves a Georgikon Napok Konferencia [60th Georgikon Scientific Conference]: Abstract volume | pp. 165</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/30383266" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="misc">
+                        <div class="publication-type">📝 Publication</div>
+                        <h3 class="publication-title">III. Nemzetközi Mátrai Egészségturisztikai Konferencia. az akadálymentes és paraturizmus lehetőségei : Előadások és tanulmányok összefoglalói</h3>
+                        <div class="publication-authors">Unknown</div>
+
+                        <div class="publication-meta">
+                            <span>Matralab NGO</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/30320215" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="misc">
+                        <div class="publication-type">📝 Publication</div>
+                        <h3 class="publication-title">Hátrányos térségek turisztikai értelmezése az életciklus modellek által</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>XIII. KHEOPS Nemzetközi Tudományos Konferencia: Gazdasági és társadalmi útkeresés | pp. 387</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/30386426" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="inbook">
+                        <div class="publication-type">📖 Book Chapter</div>
+                        <h3 class="publication-title">Hátrányos térségek turisztikai értelmezése az életciklus modellek által</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>Gazdálkodástudományi kihívások a 21. században | pp. 322-331</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/30386445" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="inbook">
+                        <div class="publication-type">📖 Book Chapter</div>
                         <h3 class="publication-title">Generációs sajátosságok vizsgálata turizmusfogyasztási szokások alapján</h3>
-                        <div class="publication-authors">Zsarnóczky, M.</div>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
                         <div class="publication-meta">
-                            <span>In: Emberközpontú tudomány (pp. 256-265)</span>
-                            <span>Tomori Pál Főiskola, Budapest</span>
+                            <span>Emberközpontú tudomány | pp. 256-265</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/3371120" class="btn-link" target="_blank">MTMT</a>
                         </div>
                     </article>
+                    <article class="publication-item" data-type="conference">
+                        <div class="publication-type">🎤 Conference Paper</div>
+                        <h3 class="publication-title">Generációs sajátosságok az idősturizmusban [Generational characteristics in senior tourism]</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
 
-                    <article class="publication-item">
-                        <div class="publication-type">Book Chapter</div>
+                        <div class="publication-meta">
+                            <span>Generációk a turizmusban. I. Nemzetközi Turizmusmarketing Konferencia: Absztraktkötet | pp. 11</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/3352265" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="inbook">
+                        <div class="publication-type">📖 Book Chapter</div>
                         <h3 class="publication-title">Generációs sajátosságok az idősturizmusban</h3>
-                        <div class="publication-authors">Zsarnóczky, M.</div>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
                         <div class="publication-meta">
-                            <span>In: A turizmus dimenziói (pp. 237-246)</span>
-                            <span>Pécsi Tudományegyetem</span>
+                            <span>Generációk a turizmusban | pp. 31-38</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/3352315" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="misc">
+                        <div class="publication-type">📝 Publication</div>
+                        <h3 class="publication-title">Generációs sajátosságok a vidéki turizmus fejlesztésében</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/3387798" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="book">
+                        <div class="publication-type">📚 Book</div>
+                        <h3 class="publication-title">Egészségturizmus 2.0</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>Matralab NGO</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/3390439" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="inproceedings">
+                        <div class="publication-type">🎤 Conference Proceedings</div>
+                        <h3 class="publication-title">Digitalizációs, technológiai és innovatív lehetőségek a vendéglátóiparban</h3>
+                        <div class="publication-authors">Lévay, Sára and Tar, Luca and Veréb, Noémi and Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>LX. Georgikon Napok | pp. 496-504</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/30391796" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="conference">
+                        <div class="publication-type">🎤 Conference Paper</div>
+                        <h3 class="publication-title">Digitalization, technology and innovative opportunities in the hospitality industry</h3>
+                        <div class="publication-authors">Sára, Lévay and Luca, Tar and Noémi, Veréb and Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>LX. Georgikon Napok: 60 éves a Georgikon Napok Konferencia [60th Georgikon Scientific Conference]: Abstract volume | pp. 164</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/30383271" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="conference">
+                        <div class="publication-type">🎤 Conference Paper</div>
+                        <h3 class="publication-title">Bűnmegelőzés a turizmusban</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs and Garamvölgyi, László</div>
+
+                        <div class="publication-meta">
+                            <span>III. Turizmus és Biztonság Nemzetközi Tudományos Konferencia Absztraktkötete | pp. 24</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/30386475" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="inproceedings">
+                        <div class="publication-type">🎤 Conference Proceedings</div>
+                        <h3 class="publication-title">Az élelmiszerbiztonság és a turizmus összefüggései az Európai Unióban</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>A hatékony marketing | pp. 744-754</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/3408487" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="misc">
+                        <div class="publication-type">📝 Publication</div>
+                        <h3 class="publication-title">Az egészség szerepe a vidéki turizmus régióiban. Magyar Földrajzi Társaság Turizmusföldrajzi szakosztály előadása</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/30388073" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="misc">
+                        <div class="publication-type">📝 Publication</div>
+                        <h3 class="publication-title">Az akadálymentesség mint innovációs lehetőség a turizmusban</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/30383306" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="inproceedings">
+                        <div class="publication-type">🎤 Conference Proceedings</div>
+                        <h3 class="publication-title">Az akadálymentes turizmus, mint rehabilitációs „eszköz”</h3>
+                        <div class="publication-authors">Zsarnóczky-Dulházi, Fanni and Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>LX. Georgikon Napok | pp. 56-61</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/30391802" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="article">
+                        <div class="publication-type">📄 Journal Article</div>
+                        <h3 class="publication-title">An empirical study on the influences of management&#x27;s attitudes toward employees with disabilities in the hospitality sector</h3>
+                        <div class="publication-authors">Sharma, Ambuj and Zsarnóczky, Martin Balázs and Dunay, Anna</div>
+
+                        <div class="publication-meta">
+                            <span>POLISH JOURNAL OF MANAGEMENT STUDIES | Vol. 18 | pp. 311-323</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://doi.org/10.17512/pjms.2018.18.2.25" class="btn-link" target="_blank">DOI</a> <a href="https://m2.mtmt.hu/api/publication/30331865" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="article">
+                        <div class="publication-type">📄 Journal Article</div>
+                        <h3 class="publication-title">Akadálymentesség és a parasport turisztikai lehetőségei az Európai Unióban</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>ACTA CAROLUS ROBERTUS | Vol. 8 | pp. 227-239</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/30378823" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="conference">
+                        <div class="publication-type">🎤 Conference Paper</div>
+                        <h3 class="publication-title">Accessible tourism as a rehabilitation tool</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs and Zsarnóczky-Dulházi, Fanni</div>
+
+                        <div class="publication-meta">
+                            <span>LX. Georgikon Napok: 60 éves a Georgikon Napok Konferencia [60th Georgikon Scientific Conference]: Abstract volume | pp. 48</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/30383259" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="conference">
+                        <div class="publication-type">🎤 Conference Paper</div>
+                        <h3 class="publication-title">Accessibility as a tourism niche opportunity in the Europen Union</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>III. Nemzetközi Mátrai Egészségturisztikai Konferencia | pp. 13</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/30383228" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="techreport">
+                        <div class="publication-type">📋 Technical Report</div>
+                        <h3 class="publication-title">Accessibility as a special niche in European social groups</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/31678032" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="misc">
+                        <div class="publication-type">📝 Publication</div>
+                        <h3 class="publication-title">Accessibility as a special niche in European social groups</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/30392233" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="inproceedings">
+                        <div class="publication-type">🎤 Conference Proceedings</div>
+                        <h3 class="publication-title">A vendéglátás történeti folyamatainak innovációs szempontú vizsgálata</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>LX. Georgikon Napok | pp. 505-512</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/30391798" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="misc">
+                        <div class="publication-type">📝 Publication</div>
+                        <h3 class="publication-title">A turizmus térhasználatának sajátosságai, „nem tér” és „mindenképpen látni kell” pontok a Butler-modellben</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>XIII. KHEOPS Nemzetközi Tudományos Konferencia: Gazdasági és társadalmi útkeresés | pp. 48</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/30386420" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="inbook">
+                        <div class="publication-type">📖 Book Chapter</div>
+                        <h3 class="publication-title">A regionális klímaváltozás szerepe a fenntartható turizmusban</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>Regionális folyamatok a változó világban és Magyarországon | pp. 241-252</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/3331578" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="misc">
+                        <div class="publication-type">📝 Publication</div>
+                        <h3 class="publication-title">A népi hagyományok szerepe a hazai gasztroturizmusban [The role of folk traditions in Hungarian gastro-tourism]</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>&quot;Fenntarthatósági kihívások és válaszok&quot; [﻿elektronikus dok.﻿] [&quot;Sustainability challenges and answers&quot; ] [&quot;Herausforderungen und Antworten von Nachhaltigkeit&quot;] | pp. 268</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/3361266" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="inbook">
+                        <div class="publication-type">📖 Book Chapter</div>
+                        <h3 class="publication-title">A népi hagyományok szerepe a hazai gasztroturizmusban</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>XVI. Nemzetközi Tudományos Napok | pp. 1875</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/30798975" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="conference">
+                        <div class="publication-type">🎤 Conference Paper</div>
+                        <h3 class="publication-title">A modern gasztronómia szerepe a turizmusban</h3>
+                        <div class="publication-authors">Vetró, Richárd and Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>III. Nemzetközi Mátrai Egészségturisztikai Konferencia | pp. 19</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/30392248" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="misc">
+                        <div class="publication-type">📝 Publication</div>
+                        <h3 class="publication-title">A magyarországi egészségturizmusról egy kérdőíves felmérés tükrében</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/3371170" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="book">
+                        <div class="publication-type">📚 Book</div>
+                        <h3 class="publication-title">14th Annual International Conference on Economics and Business : CHALLENGES IN THE CARPATHIAN BASIN : Innovation and technology in the knowledge based economy</h3>
+                        <div class="publication-authors">Unknown</div>
+
+                        <div class="publication-meta">
+                            <span>Sapientia Erdélyi Magyar Tudományegyetem</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/3371347" class="btn-link" target="_blank">MTMT</a>
                         </div>
                     </article>
                 </div>
             </div>
 
-            <!-- 2017 Publications -->
-            <div class="year-section">
-                <h2 class="year-title">2017</h2>
-                
+            <div class="year-section" data-year="2017">
+                <h2 class="year-title">2017 <span class="year-count">(19 publications)</span></h2>
                 <div class="publication-list">
-                    <article class="publication-item">
-                        <div class="publication-type">Journal Article</div>
-                        <h3 class="publication-title">Developing Senior Tourism in Europe</h3>
-                        <div class="publication-authors">Zsarnóczky, M.</div>
+
+                    <article class="publication-item" data-type="article">
+                        <div class="publication-type">📄 Journal Article</div>
+                        <h3 class="publication-title">Turizmustervezés az egészségturizmusban</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
                         <div class="publication-meta">
-                            <span>Pannon Management Review, 6(3-4): 201-214</span>
+                            <span>ACTA CAROLUS ROBERTUS | Vol. 7 | pp. 235-253</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/3311740" class="btn-link" target="_blank">MTMT</a>
                         </div>
                     </article>
-
-                    <article class="publication-item">
-                        <div class="publication-type">Journal Article</div>
+                    <article class="publication-item" data-type="article">
+                        <div class="publication-type">📄 Journal Article</div>
                         <h3 class="publication-title">The future of sustainable rural tourism development - the impacts of climate change</h3>
-                        <div class="publication-authors">Zsarnóczky, M.</div>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
                         <div class="publication-meta">
-                            <span>Annals of the Polish Association of Agricultural and Agribusiness Economists, 19(3): 337-341</span>
+                            <span>ANNALS OF THE POLISH ASSOCIATION OF AGRICULTURAL AND AGRIBUSINESS ECONOMISTS | Vol. 19 | pp. 337-344</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://doi.org/10.5604/01.3001.0010.3374" class="btn-link" target="_blank">DOI</a> <a href="https://m2.mtmt.hu/api/publication/3302147" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="conference">
+                        <div class="publication-type">🎤 Conference Paper</div>
+                        <h3 class="publication-title">Special aspects of tourism use of space &#x27;no show&#x27; and &#x27;must see&#x27; points in Butler&#x27;s model</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>57th ERSA Congress “Social Progress for Resilient Regions”</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/3302145" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="misc">
+                        <div class="publication-type">📝 Publication</div>
+                        <h3 class="publication-title">Silver Economy &amp; Silver Tourism in the European Union</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>Sustainable Tourism - Issues &amp; Challeges | pp. 51-64</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/3226137" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="article">
+                        <div class="publication-type">📄 Journal Article</div>
+                        <h3 class="publication-title">New Innovations for Senior Care</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>VADYBA: JOURNAL OF MANAGEMENT | pp. 45-50</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/3246274" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="article">
+                        <div class="publication-type">📄 Journal Article</div>
+                        <h3 class="publication-title">How does Artificial Intelligence Affect the Tourism Industry?</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>VADYBA: JOURNAL OF MANAGEMENT | pp. 85-90</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/3302133" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="misc">
+                        <div class="publication-type">📝 Publication</div>
+                        <h3 class="publication-title">Egészségügyi applikációk hatásai az egészségturizmusra</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs and Dávid, Lóránt and Zsarnóczky-Dulházi, Fanni</div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/3318344" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="conference">
+                        <div class="publication-type">🎤 Conference Paper</div>
+                        <h3 class="publication-title">Egészségturizmus történeti fejlődése Észak-Magyarországon</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>LIX. Georgikon Napok | pp. 192</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/3302136" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="inproceedings">
+                        <div class="publication-type">🎤 Conference Proceedings</div>
+                        <h3 class="publication-title">Egészségturizmus történeti fejlődése Észak-Magyarországon</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>LIX. Georgikon Napok | pp. 585-593</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/3317096" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="misc">
+                        <div class="publication-type">📝 Publication</div>
+                        <h3 class="publication-title">Effects of silver economy on european tourism</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/3321960" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="misc">
+                        <div class="publication-type">📝 Publication</div>
+                        <h3 class="publication-title">Digitális vásárlási szokások, generációs különbségek</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/3324963" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="article">
+                        <div class="publication-type">📄 Journal Article</div>
+                        <h3 class="publication-title">Developing Senior Tourism in Europe</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>PANNON MANAGEMENT REVIEW | Vol. 6 | pp. 201-214</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/3408625" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="conference">
+                        <div class="publication-type">🎤 Conference Paper</div>
+                        <h3 class="publication-title">Contradictions of medical tourism</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>4th International Conference on Sustainable Destination Excellence | pp. 28</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/3321913" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="conference">
+                        <div class="publication-type">🎤 Conference Paper</div>
+                        <h3 class="publication-title">Challenges and Innovations in the Silver Tourism - Matra Resort case study</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>pp. 2</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/30399823" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="misc">
+                        <div class="publication-type">📝 Publication</div>
+                        <h3 class="publication-title">Best Pratices in the Global Medical Tourism Processes. Indian Medical Association workshop, Delhi</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/30399811" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="mastersthesis">
+                        <div class="publication-type">🎓 Thesis</div>
+                        <h3 class="publication-title">Az egészségturizmus folyamatainak vizsgálata Észak-magyarországi mintaterületeken</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>SZIE</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://doi.org/10.14751/SZIE.2017.069" class="btn-link" target="_blank">DOI</a> <a href="https://m2.mtmt.hu/api/publication/3356306" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="mastersthesis">
+                        <div class="publication-type">🎓 Thesis</div>
+                        <h3 class="publication-title">Analysis of health tourism processes in sample regions of Northern Hungary.</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/32436909" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="inproceedings">
+                        <div class="publication-type">🎤 Conference Proceedings</div>
+                        <h3 class="publication-title">Accessible tourism in the European Union</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>6th Central European Conference in Regional Science &quot;Engines of Urban and Regional Development&quot; | pp. 30-39</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/3302142" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="conference">
+                        <div class="publication-type">🎤 Conference Paper</div>
+                        <h3 class="publication-title">A regionalitás szerepe a fenntartható turizmusban</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>Regionális folyamatok a változó világban és Magyarországon | pp. 11</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/3313390" class="btn-link" target="_blank">MTMT</a>
                         </div>
                     </article>
                 </div>
             </div>
 
-            <!-- 2016 Publications -->
-            <div class="year-section">
-                <h2 class="year-title">2016</h2>
-                
+            <div class="year-section" data-year="2016">
+                <h2 class="year-title">2016 <span class="year-count">(22 publications)</span></h2>
                 <div class="publication-list">
-                    <article class="publication-item">
-                        <div class="publication-type">Journal Article</div>
-                        <h3 class="publication-title">Innovation Challenges of the Silver Economy</h3>
-                        <div class="publication-authors">Zsarnóczky, M.</div>
+
+                    <article class="publication-item" data-type="article">
+                        <div class="publication-type">📄 Journal Article</div>
+                        <h3 class="publication-title">The impact of silver tourism on rural areas. WPŁYW SREBRNEJ TURYSTYKI NA OBSZARY WIEJSKIE</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
                         <div class="publication-meta">
-                            <span>Vadyba: Journal of Management, 28(1): 105-109</span>
+                            <span>ANNALS OF THE POLISH ASSOCIATION OF AGRICULTURAL AND AGRIBUSINESS ECONOMISTS | Vol. 18 | pp. 402-410</span>
                         </div>
-                        <p class="publication-abstract">
-                            Examines innovation opportunities and challenges in developing products and services for the ageing population (silver economy), with focus on quality of life improvements.
-                        </p>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/3165728" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="inproceedings">
+                        <div class="publication-type">🎤 Conference Proceedings</div>
+                        <h3 class="publication-title">The New Hope for the EU</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>Building Bridges | pp. 203-204</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/3165678" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="conference">
+                        <div class="publication-type">🎤 Conference Paper</div>
+                        <h3 class="publication-title">Smart Innovations of Elderly Care</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>New Pressures on Cities and Regions | pp. 108</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/3182681" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="conference">
+                        <div class="publication-type">🎤 Conference Paper</div>
+                        <h3 class="publication-title">Smart Ideas for Elderly Care</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>New Pressures on Cities and Regions | pp. 1-12</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/3318730" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="inproceedings">
+                        <div class="publication-type">🎤 Conference Proceedings</div>
+                        <h3 class="publication-title">Silver tourism</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>The Agri-Food Value Chain: Challenges for Natural Resources Management and Society | pp. 556-563</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://doi.org/10.15414/isd2016.s7.15" class="btn-link" target="_blank">DOI</a> <a href="https://m2.mtmt.hu/api/publication/3325852" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="conference">
+                        <div class="publication-type">🎤 Conference Paper</div>
+                        <h3 class="publication-title">Silver Tourism</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>International Scientific Days: The Agri - Food Value Chain: Challenges for Natural Resources Management and Society | pp. 89-89</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://doi.org/10.15414/isd2016.s7.15" class="btn-link" target="_blank">DOI</a> <a href="https://m2.mtmt.hu/api/publication/3165665" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="article">
+                        <div class="publication-type">📄 Journal Article</div>
+                        <h3 class="publication-title">SILVER TOURISM IN THE EUROPEAN UNION</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs and Dávid, Lóránt Dénes and MUKAYEV, Zhandos and BAIBURIEV, Ruslan</div>
+
+                        <div class="publication-meta">
+                            <span>GEOJOURNAL OF TOURISM AND GEOSITES | Vol. 9 | pp. 224-232</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/3115514" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="inproceedings">
+                        <div class="publication-type">🎤 Conference Proceedings</div>
+                        <h3 class="publication-title">Medical Tourism in the Matra Region</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>SUSTAINABILITY OF RURAL AREAS IN PRACTICE | pp. 372-378</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/3165681" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="misc">
+                        <div class="publication-type">📝 Publication</div>
+                        <h3 class="publication-title">Latest trends of European Senior Economy. Prizztech Study Tour in Finland</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/30399810" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="inproceedings">
+                        <div class="publication-type">🎤 Conference Proceedings</div>
+                        <h3 class="publication-title">Innovative techniques in tourism education</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>Value changes in a transforming economy | pp. 2-18</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/3183058" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="inbook">
+                        <div class="publication-type">📖 Book Chapter</div>
+                        <h3 class="publication-title">Időskori innovatív megoldások</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>Sokszínű közgazdaságtan a 21. században | pp. 92-102</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/3165716" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="article">
+                        <div class="publication-type">📄 Journal Article</div>
+                        <h3 class="publication-title">INNOVATION CHALLENGES OF THE SILVER ECONOMY</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>VADYBA: JOURNAL OF MANAGEMENT | pp. 105-109</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/3072381" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="misc">
+                        <div class="publication-type">📝 Publication</div>
+                        <h3 class="publication-title">Ezüst turizmus az Európai Unióban</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs and Dr. Dávid, Lóránt</div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/3183054" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="article">
+                        <div class="publication-type">📄 Journal Article</div>
+                        <h3 class="publication-title">CONTRADICTIONS OF MEDICAL TOURISM</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>DETUROPE: THE CENTRAL EUROPEAN JOURNAL OF REGIONAL DEVELOPMENT AND TOURISM | Vol. 8 | pp. 212-223</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/3181963" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="inproceedings">
+                        <div class="publication-type">🎤 Conference Proceedings</div>
+                        <h3 class="publication-title">Az idősturizmus helyzete Magyarországon</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>LVIII. Georgikon Napok | pp. 454-462</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/3165747" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="article">
+                        <div class="publication-type">📄 Journal Article</div>
+                        <h3 class="publication-title">Az idősek turizmusának hatásai a falusi szálláshelyeken</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>FALU | Vol. 31 | pp. 65-74</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/3165741" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="article">
+                        <div class="publication-type">📄 Journal Article</div>
+                        <h3 class="publication-title">Az idősek szegmensének hatásai az egészségturizmusban</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>ACTA CAROLUS ROBERTUS | Vol. 6 | pp. 318-332</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/3175499" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="inproceedings">
+                        <div class="publication-type">🎤 Conference Proceedings</div>
+                        <h3 class="publication-title">Az idősek gazdaságának szerepe az egészségturizmusban</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>&quot;Innovációs kihívások és lehetőségek 2014-2020 között&quot; [﻿elektronikus dok.﻿] : XV. Nemzetközi Tudományos Napok : tanulmányok = &quot;Challenges and prospects for innovation between 2014-2020&quot; : 15th International Scientific Days : publications = &quot;Herausforderungen und Möglichtkeiten von Innovationen zwischen 2014-2020&quot; : XV. Internationale Wissenschaftliche Tagung : Publikationen | pp. 1693-1701</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/3408611" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="inproceedings">
+                        <div class="publication-type">🎤 Conference Proceedings</div>
+                        <h3 class="publication-title">Are we at the beginning of new age of human and economic evolution?</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>&quot;Innovációs kihívások és lehetőségek 2014-2020 között&quot; [﻿elektronikus dok.﻿] : XV. Nemzetközi Tudományos Napok : tanulmányok = &quot;Challenges and prospects for innovation between 2014-2020&quot; : 15th International Scientific Days : publications = &quot;Herausforderungen und Möglichtkeiten von Innovationen zwischen 2014-2020&quot; : XV. Internationale Wissenschaftliche Tagung : Publikationen | pp. 1685-1691</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/3408609" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="misc">
+                        <div class="publication-type">📝 Publication</div>
+                        <h3 class="publication-title">AZ IDŐSEK GAZDASÁGÁNAK SZEREPE AZ EGÉSZSÉGTURIZMUSBAN. OPPORTUNITY OF THE MEDICAL TOURISM IN THE SILVER ECONOMY</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>&quot;Innovációs kihívások és lehetőségek 2014-2020 között&quot; : XV. Nemzetközi tudományos napok : program : előadások és poszterek összefoglalói = &quot;Challenges and prospects for innovation between 2014-2020&quot; : 15th International Scientific Days : programme : summaries of presentations and posters = &quot;Herausforderungen und Möglichtkeiten von Innovationen zwischen 2014-2020&quot; : XV. Internationale Wissenschaftliche Tagung : Programm : Zusamennfassungen der Vorträge | pp. 269-269</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/3072862" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="misc">
+                        <div class="publication-type">📝 Publication</div>
+                        <h3 class="publication-title">ARE WE AT THE BEGINNING OF NEW HUMAN AND ECONOMIC EVOLUTION?</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>&quot;Innovációs kihívások és lehetőségek 2014-2020 között&quot; : XV. Nemzetközi tudományos napok : program : előadások és poszterek összefoglalói = &quot;Challenges and prospects for innovation between 2014-2020&quot; : 15th International Scientific Days : programme : summaries of presentations and posters = &quot;Herausforderungen und Möglichtkeiten von Innovationen zwischen 2014-2020&quot; : XV. Internationale Wissenschaftliche Tagung : Programm : Zusamennfassungen der Vorträge | pp. 270-270</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/3072864" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="article">
+                        <div class="publication-type">📄 Journal Article</div>
+                        <h3 class="publication-title">A falusi turizmus adottságai Egercsehiben</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>ACTA REGIONIS RURUM | Vol. 10 | pp. 70-79</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/3302149" class="btn-link" target="_blank">MTMT</a>
+                        </div>
                     </article>
                 </div>
             </div>
 
-            <!-- Additional Information -->
-            <div class="contact" style="margin-top: var(--space-xl); padding: var(--space-lg); background: var(--color-bg-secondary);">
-                <h2 style="text-align: center; margin-bottom: var(--space-md);">Access Full Publications</h2>
-                <p style="text-align: center; max-width: 800px; margin: 0 auto var(--space-md);">
-                    For full-text access, citation information, or collaboration inquiries, please visit my academic profiles or contact me directly.
-                </p>
-                <div class="profiles-grid" style="max-width: 800px; margin: 0 auto;">
-                    <a href="https://orcid.org/0000-0002-2905-2168" target="_blank" class="profile-card">
-                        <div class="profile-icon">🔗</div>
-                        <div class="profile-name">ORCID</div>
-                        <div class="profile-id">0000-0002-2905-2168</div>
-                    </a>
-                    
-                    <a href="https://www.researchgate.net/profile/Martin-Zsarnoczky" target="_blank" class="profile-card">
-                        <div class="profile-icon">📚</div>
-                        <div class="profile-name">ResearchGate</div>
-                    </a>
-                    
-                    <a href="#" target="_blank" class="profile-card">
-                        <div class="profile-icon">🎓</div>
-                        <div class="profile-name">Google Scholar</div>
-                    </a>
+            <div class="year-section" data-year="2015">
+                <h2 class="year-title">2015 <span class="year-count">(8 publications)</span></h2>
+                <div class="publication-list">
+
+                    <article class="publication-item" data-type="inproceedings">
+                        <div class="publication-type">🎤 Conference Proceedings</div>
+                        <h3 class="publication-title">Turizmus - vendéglátás duális képzések innovatív lehetőségei</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>&quot;Tudomány és felelősség&quot; [﻿elektronikus dok.﻿] | pp. 493-501</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/3165711" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="misc">
+                        <div class="publication-type">📝 Publication</div>
+                        <h3 class="publication-title">Tourism challenges and differences between the north and south part of Matra mountains</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/30400379" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="misc">
+                        <div class="publication-type">📝 Publication</div>
+                        <h3 class="publication-title">Startup cégek életútjai a nemzetközi összefüggéseket vizsgálva</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/30400431" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="misc">
+                        <div class="publication-type">📝 Publication</div>
+                        <h3 class="publication-title">Meaning of Territorial Cohesion for European Startup Companies</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/30400432" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="misc">
+                        <div class="publication-type">📝 Publication</div>
+                        <h3 class="publication-title">II. Mátrai Egészségturisztikai Konferencia és Workshop összefoglaló kiadványa</h3>
+                        <div class="publication-authors">Unknown</div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/30400371" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="misc">
+                        <div class="publication-type">📝 Publication</div>
+                        <h3 class="publication-title">Fiatal vállalkozók konferenciája a gyöngyösi Kolaházban összefoglaló kiadvány</h3>
+                        <div class="publication-authors">Unknown</div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/30400429" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="inproceedings">
+                        <div class="publication-type">🎤 Conference Proceedings</div>
+                        <h3 class="publication-title">AZ EGÉSZSÉGTURIZMUS ELLENTMONDÁSAI</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>Tudomány és innováció a lokális és globális fejlődésért : nemzetközi tudományos konferencia előadásai | pp. 274-282</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/3072866" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="misc">
+                        <div class="publication-type">📝 Publication</div>
+                        <h3 class="publication-title">A turizmus, a kultúra és a gyermektáborok kapcsolata a gyöngyösi Kortárs Palóc Tájházban</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/30400375" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
                 </div>
             </div>
+
+            <div class="year-section" data-year="2014">
+                <h2 class="year-title">2014 <span class="year-count">(6 publications)</span></h2>
+                <div class="publication-list">
+
+                    <article class="publication-item" data-type="inbook">
+                        <div class="publication-type">📖 Book Chapter</div>
+                        <h3 class="publication-title">Turizmus és vendéglátó szakképző iskolák innovációs lehetőségei</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs and Oláhné Zieser, Zsuzsanna</div>
+
+                        <div class="publication-meta">
+                            <span>A hallgatói tudományos műhelyekben létrejött kutatási eredmények | pp. 83-90</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/2792972" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="conference">
+                        <div class="publication-type">🎤 Conference Paper</div>
+                        <h3 class="publication-title">Reform vagy az innováció a sikeres cégek titka?</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>I. Mátrai innovációs konferencia és workshop konferencia közleményei | pp. 12</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/30400349" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="misc">
+                        <div class="publication-type">📝 Publication</div>
+                        <h3 class="publication-title">I. Mátrai innovációs konferencia és workshop konferencia közleményei</h3>
+                        <div class="publication-authors">Unknown</div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/30400348" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="misc">
+                        <div class="publication-type">📝 Publication</div>
+                        <h3 class="publication-title">Best of Világtáncfesztivál és Workshop (2010-2014)</h3>
+                        <div class="publication-authors">Unknown</div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/30400419" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="article">
+                        <div class="publication-type">📄 Journal Article</div>
+                        <h3 class="publication-title">A szőlő és a bor városa. Gyöngyös /Gyöngyös és a Mátra térsége/</h3>
+                        <div class="publication-authors">Benkő, Béla and Keresztesi, Koppány and Juhász, Péter and Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>RECREATION | Vol. 4 | pp. 4-6</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/3165632" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="conference">
+                        <div class="publication-type">🎤 Conference Paper</div>
+                        <h3 class="publication-title">A Casa de la Musica, mint sikeres vállalkozás eredményeinek összefoglalása a fesztiválok piacán.</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>Best of Világtáncfesztivál és Workshop (2010-2014) | pp. 14</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/30400421" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <div class="year-section" data-year="2013">
+                <h2 class="year-title">2013 <span class="year-count">(7 publications)</span></h2>
+                <div class="publication-list">
+
+                    <article class="publication-item" data-type="misc">
+                        <div class="publication-type">📝 Publication</div>
+                        <h3 class="publication-title">Inkubátorházak és inkubáció folyamatok nemzetközi trendjei</h3>
+                        <div class="publication-authors">Unknown</div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/30400266" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="misc">
+                        <div class="publication-type">📝 Publication</div>
+                        <h3 class="publication-title">IV. Világtáncfesztivál és szakmai workshop konferencia kiadványa</h3>
+                        <div class="publication-authors">Unknown</div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/30400415" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="misc">
+                        <div class="publication-type">📝 Publication</div>
+                        <h3 class="publication-title">I. Mátrai Egészségturizmus Konferencia és Workshop kiadványa</h3>
+                        <div class="publication-authors">Unknown</div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/30400281" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="conference">
+                        <div class="publication-type">🎤 Conference Paper</div>
+                        <h3 class="publication-title">Hogyan vállalkozzanak a fiatalok sikeresen?</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>Inkubátorházak és inkubáció folyamatok nemzetközi trendjei | pp. 8</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/30400267" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="conference">
+                        <div class="publication-type">🎤 Conference Paper</div>
+                        <h3 class="publication-title">A zene, a tánc és a művészetek jelentősége a nemzetközi fesztiválpiacon.</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>IV. Világtáncfesztivál és szakmai workshop konferencia kiadványa | pp. 9</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/30400416" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="misc">
+                        <div class="publication-type">📝 Publication</div>
+                        <h3 class="publication-title">A duális és a triális szakképzés különbségei számokban</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/30400254" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="conference">
+                        <div class="publication-type">🎤 Conference Paper</div>
+                        <h3 class="publication-title">A Mátra-vidék egészségturisztikai adottságai</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>I. Mátrai Egészségturizmus Konferencia és Workshop kiadványa | pp. 11</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/30400284" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <div class="year-section" data-year="2012">
+                <h2 class="year-title">2012 <span class="year-count">(4 publications)</span></h2>
+                <div class="publication-list">
+
+                    <article class="publication-item" data-type="misc">
+                        <div class="publication-type">📝 Publication</div>
+                        <h3 class="publication-title">Szakképzés jogszabályi környezetének változása és hatásai a mindennapokban</h3>
+                        <div class="publication-authors">Unknown</div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/30400259" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="conference">
+                        <div class="publication-type">🎤 Conference Paper</div>
+                        <h3 class="publication-title">Innovative processes of festival tourism in Budapest</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>III. World Dance Festival and Workshop Budapest - Conference Proceedings | pp. 11</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/30400409" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="misc">
+                        <div class="publication-type">📝 Publication</div>
+                        <h3 class="publication-title">III. World Dance Festival and Workshop Budapest - Conference Proceedings</h3>
+                        <div class="publication-authors">Unknown</div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/30400403" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="conference">
+                        <div class="publication-type">🎤 Conference Paper</div>
+                        <h3 class="publication-title">A hazai szakképzés változásai: innováció vagy despotizmus</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>Szakképzés jogszabályi környezetének változása és hatásai a mindennapokban | pp. 6</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/30400260" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <div class="year-section" data-year="2011">
+                <h2 class="year-title">2011 <span class="year-count">(4 publications)</span></h2>
+                <div class="publication-list">
+
+                    <article class="publication-item" data-type="misc">
+                        <div class="publication-type">📝 Publication</div>
+                        <h3 class="publication-title">II. Világtáncfesztivál és Workshop konferencia kiadványa</h3>
+                        <div class="publication-authors">Unknown</div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/30400396" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="conference">
+                        <div class="publication-type">🎤 Conference Paper</div>
+                        <h3 class="publication-title">A szakképzési törvény módosulásának várható hatásai a turizmus és a vendéglátás területén</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>A szakképzés változásának várható folyamatairól egy szakmai workshop keretében összefoglaló kiadványa | pp. 9</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/30400298" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="misc">
+                        <div class="publication-type">📝 Publication</div>
+                        <h3 class="publication-title">A szakképzés változásának várható folyamatairól egy szakmai workshop keretében összefoglaló kiadványa</h3>
+                        <div class="publication-authors">Unknown</div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/30400294" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="misc">
+                        <div class="publication-type">📝 Publication</div>
+                        <h3 class="publication-title">A fesztiválok szervezésének kihívásai és a legjobb hazai példái</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/30400398" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <div class="year-section" data-year="2010">
+                <h2 class="year-title">2010 <span class="year-count">(2 publications)</span></h2>
+                <div class="publication-list">
+
+                    <article class="publication-item" data-type="misc">
+                        <div class="publication-type">📝 Publication</div>
+                        <h3 class="publication-title">Világtáncfesztivál és workshop konferencia kiadványa</h3>
+                        <div class="publication-authors">Unknown</div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/30400386" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                    <article class="publication-item" data-type="misc">
+                        <div class="publication-type">📝 Publication</div>
+                        <h3 class="publication-title">Tánc, mint sikeres fesztiváltermék.</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/30400390" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <div class="year-section" data-year="2009">
+                <h2 class="year-title">2009 <span class="year-count">(1 publication)</span></h2>
+                <div class="publication-list">
+
+                    <article class="publication-item" data-type="misc">
+                        <div class="publication-type">📝 Publication</div>
+                        <h3 class="publication-title">Kultúra, mint vállalkozási terület. Legjobb példák a profit orientált kulturális tevékenységekre.. Válogatás a Moholy-Nagy Művészeti Egyetem kulturális workshopjaiból</h3>
+                        <div class="publication-authors">Zsarnóczky, Martin Balázs</div>
+
+                        <div class="publication-meta">
+                            <span>pp. 29</span>
+                        </div>
+
+                        <div class="publication-links">
+                            <a href="https://m2.mtmt.hu/api/publication/30400368" class="btn-link" target="_blank">MTMT</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
         </div>
     </div>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <p>&copy; 2025 Dr. Martin Zsarnóczky. All rights reserved.</p>
+                <p>&copy; 2025 Dr. Martin Zsarnoczky. All rights reserved.</p>
                 <div class="footer-links">
                     <a href="index.html">Home</a>
                     <a href="https://orcid.org/0000-0002-2905-2168" target="_blank">ORCID</a>
                     <a href="https://www.researchgate.net/profile/Martin-Zsarnoczky" target="_blank">ResearchGate</a>
+                    <a href="https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=authors10047631" target="_blank">MTMT</a>
                 </div>
             </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+        // Search functionality
+        const searchBox = document.getElementById('searchBox');
+        const publications = document.querySelectorAll('.publication-item');
+        
+        searchBox.addEventListener('input', function(e) {
+            const searchTerm = e.target.value.toLowerCase();
+            
+            publications.forEach(pub => {
+                const title = pub.querySelector('.publication-title').textContent.toLowerCase();
+                const authors = pub.querySelector('.publication-authors').textContent.toLowerCase();
+                const matches = title.includes(searchTerm) || authors.includes(searchTerm);
+                
+                pub.style.display = matches ? 'block' : 'none';
+            });
+            
+            // Hide empty years
+            document.querySelectorAll('.year-section').forEach(section => {
+                const visiblePubs = section.querySelectorAll('.publication-item[style="display: block"], .publication-item:not([style])');
+                section.style.display = visiblePubs.length > 0 ? 'block' : 'none';
+            });
+        });
+        
+        // Filter functionality
+        const filterTabs = document.querySelectorAll('.filter-tab');
+        
+        filterTabs.forEach(tab => {
+            tab.addEventListener('click', function() {
+                // Update active tab
+                filterTabs.forEach(t => t.classList.remove('active'));
+                this.classList.add('active');
+                
+                const filter = this.dataset.filter;
+                
+                // Filter publications
+                publications.forEach(pub => {
+                    if (filter === 'all') {
+                        pub.style.display = 'block';
+                    } else if (filter === 'conference') {
+                        // Include both conference and inproceedings
+                        const type = pub.dataset.type;
+                        pub.style.display = (type === 'conference' || type === 'inproceedings') ? 'block' : 'none';
+                    } else {
+                        pub.style.display = pub.dataset.type === filter ? 'block' : 'none';
+                    }
+                });
+                
+                // Hide empty years
+                document.querySelectorAll('.year-section').forEach(section => {
+                    const visiblePubs = section.querySelectorAll('.publication-item[style="display: block"]');
+                    section.style.display = visiblePubs.length > 0 ? 'block' : 'none';
+                });
+            });
+        });
+        
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
 </body>
 </html>
